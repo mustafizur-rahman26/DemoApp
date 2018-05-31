@@ -19,7 +19,7 @@ public class ImageListData implements Parcelable{
     @SerializedName("copyright")
     private String copyright;
 
-    @SerializedName("link")
+    @SerializedName("url")
     private String url;
 
     /**
