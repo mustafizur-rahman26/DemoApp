@@ -2,9 +2,8 @@
 
 Sample demo application to implement image gridview using recyclerview and MVP pattern
 
-![alt portrait list view] (https://github.com/mustafizur-rahman26/DemoApp/blob/master/screenshots/Screenshot_1527745716.png)
-![alt portrait Detail view] (https://github.com/mustafizur-rahman26/DemoApp/blob/master/screenshots/Screenshot_1527745899.png)
-![alt Landscape list view] (https://github.com/mustafizur-rahman26/DemoApp/blob/master/screenshots/Screenshot_1527745930.png)
+<img src="https://github.com/mustafizur-rahman26/DemoApp/blob/master/screenshots/Screenshot_1527745716.png" height="400px" width="220x">
+<img src="https://github.com/mustafizur-rahman26/DemoApp/blob/master/screenshots/Screenshot_1527745899.png" height="400px" width="220px">
 
 
 ### The app has following Library:
