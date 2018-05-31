@@ -45,6 +45,8 @@ public class ListPresenter {
     }
 
     public void onStop() {
-        subscriptions.unsubscribe();
+        if(subscriptions != null) {
+            subscriptions.unsubscribe();
+        }
     }
 }

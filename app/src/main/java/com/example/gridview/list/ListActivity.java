@@ -43,7 +43,9 @@ public class ListActivity extends BaseApp implements ListView {
         getDependencies().inject(this);
         renderView();
 
-        presenter = new ListPresenter(networkService, this);
+        if(presenter == null){
+            presenter = new ListPresenter(networkService, this);
+        }
         presenter.getImageList();
     }
 
@@ -56,7 +58,6 @@ public class ListActivity extends BaseApp implements ListView {
         getSupportActionBar().setCustomView(R.layout.actionbar_custom);
 
         //Set custom recycleview
-
         int numOfColumn = this.getResources().getConfiguration().orientation == 1 ? 3 : 5;
         recyclerViewLayoutManager = new GridLayoutManager(context, numOfColumn);
         gridList.setLayoutManager(recyclerViewLayoutManager);
@@ -106,6 +107,7 @@ public class ListActivity extends BaseApp implements ListView {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        presenter.onStop();
         presenter = null;
     }
 }

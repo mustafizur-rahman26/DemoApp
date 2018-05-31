@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.gridview.R;
 import com.example.gridview.model.entity.ImageListData;
 
@@ -46,8 +47,9 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
         Glide.with(context)
                 .load(images)
+                .apply(new RequestOptions()
+                        .placeholder(R.drawable.ic_image_placeholder))
                 .into(holder.imageBackground);
-
     }
 
 
